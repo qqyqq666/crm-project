@@ -44,7 +44,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 			//发送同步请求
 			window.location.href="settings/qx/user/logout.do";
 		});
-		//
+		//1
 	});
 	
 </script>
