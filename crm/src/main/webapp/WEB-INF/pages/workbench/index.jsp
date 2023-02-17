@@ -37,7 +37,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 			//当前项目颜色变成白色
 			$(this).children("a").css("color","white");
 		});
-
+		window.open("workbench/main/index.do","workareaFrame");//在指定Frame下打开
 
 		//给“确定”按钮添加单击事件
 		$("#logoutBtn").click(function () {
@@ -173,7 +173,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 				<li class="liClass"><a href="javascript:void(0);" target="workareaFrame"><span class="glyphicon glyphicon-tag"></span> 动态</a></li>
 				<li class="liClass"><a href="javascript:void(0);" target="workareaFrame"><span class="glyphicon glyphicon-time"></span> 审批</a></li>
 				<li class="liClass"><a href="javascript:void(0);" target="workareaFrame"><span class="glyphicon glyphicon-user"></span> 客户公海</a></li>
-				<li class="liClass"><a href="activity/index.html" target="workareaFrame"><span class="glyphicon glyphicon-play-circle"></span> 市场活动</a></li>
+				<li class="liClass"><a href="workbench/activity/index.do" target="workareaFrame"><span class="glyphicon glyphicon-play-circle"></span> 市场活动</a></li>
 				<li class="liClass"><a href="clue/index.html" target="workareaFrame"><span class="glyphicon glyphicon-search"></span> 线索（潜在客户）</a></li>
 				<li class="liClass"><a href="customer/index.html" target="workareaFrame"><span class="glyphicon glyphicon-user"></span> 客户</a></li>
 				<li class="liClass"><a href="contacts/index.html" target="workareaFrame"><span class="glyphicon glyphicon-earphone"></span> 联系人</a></li>

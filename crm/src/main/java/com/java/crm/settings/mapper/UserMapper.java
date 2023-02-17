@@ -3,6 +3,7 @@ package com.java.crm.settings.mapper;
 import com.java.crm.settings.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
 import java.util.Map;
 
 public interface UserMapper {
@@ -60,4 +61,6 @@ public interface UserMapper {
      * @return
      */
     User selectUserByLoginActAndPwd(Map<String,Object> map);
+
+    List<User> selectAllUsers();
 }
